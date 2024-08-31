@@ -1,1 +1,54 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Include Navbar -->
+    <div id="navbar"></div>
+    <script>
+        // Load the navbar content from the navbar.html file
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => document.getElementById("navbar").innerHTML = data);
+    </script>
+
+    <!-- About Section -->
+    <div class="container mt-5">
+        <section id="about">
+            <h2>About</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="JacquesHS.jpg" class="rounded-circle img-fluid" alt="">
+                </div>
+                <div class="col-md-8">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Jacques is a researcher of altruistic AI applications.</p>
+                    </blockquote>
+                    <p>As an undergraduate participant in various computer science labs, he has participated in several 
+                        projects ranging from earthquake forecasting to traffic management and pedestrian safety. As an
+                        alum of the Miami Dade Honors College, he is finishing his bachelor's degree in computer science
+                        at the University of Florida. In 2024, he was awarded the Barry Goldwater Scholarship for his
+                        contributions to the field of computer science.
+                    </p>
+                    
+                    <script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2FCBupAetFTCBy2etrW&noBootstrap=1&jsonp=1"></script> 
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

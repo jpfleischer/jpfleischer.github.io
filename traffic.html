@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Research - Jacques Fleischer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Include Navbar -->
+    <div id="navbar"></div>
+    <script>
+        // Load the navbar content from the navbar.html file
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => document.getElementById("navbar").innerHTML = data);
+    </script>
+    </nav>
+
+    <!-- Traffic Research Content -->
+    <div class="container mt-5">
+        <section id="traffic-research">
+            <h2>SCC: Video Based Machine Learning for Smart Traffic Analysis and Management</h2>
+            <p><strong>PI Name:</strong> Dr. Sanjay Ranka</p>
+            <p><strong>Institution and Department:</strong> University of Florida, Department of Computer and Information Science and Engineering</p>
+            <p><strong>Affiliation Duration:</strong> January 2023 - Present</p>
+            <p><strong>NSF Award:</strong> <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1922782">1922782</a></p>
+            <h3>Research Focus</h3>
+            <p>This project focuses on developing AI-driven algorithms to improve urban traffic management and pedestrian safety. Our goal is to reduce traffic congestion and accidents through predictive modeling and real-time data analysis.</p>
+            <h3>Project Responsibilities</h3>
+            <p>I am responsible for designing and implementing machine learning models that predict traffic patterns based on historical and real-time data. I also work on integrating these models with traffic signal control systems to optimize flow and safety.</p>
+            <h3>Media</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/365798168?h=0ab3574022" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>Description of the image or video that conveys information about the project.</p>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
